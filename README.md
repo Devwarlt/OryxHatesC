@@ -2,6 +2,8 @@ Oryx-Hates-C
 ====================
 A Realm of the Mad God client written in C++.
 
+All credits so far to [bombpersons](https://github.com/bombpersons "bombpersons")
+
 ####[TODO](#todo-1 "TODO")
 ####[Client Packets](#client-packets-1 "Client Packets")
 ####[Server Packets](#server-packets-1 "Server Packets")
