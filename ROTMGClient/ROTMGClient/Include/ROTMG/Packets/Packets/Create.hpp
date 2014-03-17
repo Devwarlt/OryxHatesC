@@ -4,23 +4,23 @@
 
 using namespace std;
 
-class FailurePacket
+class CreatePacket
 {
-	
+
 public:
-	int errorId;
-	std::wstring errorDescription;
+	int classType;
+	int skinType;
 
 	void parseFromInput(ifstream *in);
 
-	void writeToOutput(ofstream  *out);
+	void writeToOutput(ofstream *out);
 
 
 private:
 	void InitializeInstanceFields();
 
 public:
-	FailurePacket()
+	CreatePacket()
 	{
 		InitializeInstanceFields();
 	}

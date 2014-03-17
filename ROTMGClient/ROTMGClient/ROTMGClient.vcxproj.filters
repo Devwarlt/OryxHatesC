@@ -48,12 +48,6 @@
     <ClCompile Include="Src\Misc\Endian.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\ROTMG\Packets\Packets\Failure.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\ROTMG\Packets\Packets\PacketFactory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Misc\Logger\Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -1221,9 +1215,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Include\Misc\Endian.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ROTMG\Packets\Packets\Failure.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Include\ROTMG\Packets\PacketID.hpp">

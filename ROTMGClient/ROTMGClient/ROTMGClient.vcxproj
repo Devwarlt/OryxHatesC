@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -25,6 +25,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -90,8 +91,6 @@
     <ClCompile Include="Src\ROTMG\Exception\Exception.cpp" />
     <ClCompile Include="Src\ROTMG\Packets\Packet.cpp" />
     <ClCompile Include="Src\ROTMG\Packets\PacketBuffer.cpp" />
-    <ClCompile Include="Src\ROTMG\Packets\Packets\Failure.cpp" />
-    <ClCompile Include="Src\ROTMG\Packets\Packets\PacketFactory.cpp" />
     <ClCompile Include="Src\ROTMG\Proxy\Proxy2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -484,7 +483,6 @@
     <ClInclude Include="Include\ROTMG\Packets\PacketBuffer.hpp" />
     <ClInclude Include="Include\ROTMG\Packets\PacketFactory.hpp" />
     <ClInclude Include="Include\ROTMG\Packets\PacketID.hpp" />
-    <ClInclude Include="Include\ROTMG\Packets\Packets\Failure.hpp" />
     <ClInclude Include="Include\ROTMG\Proxy\Proxy2.hpp" />
     <ClInclude Include="Include\ROTMG\Queues\ByteBuffer.hpp" />
     <ClInclude Include="Include\ROTMG\Queues\EncryptorOutQueue.hpp" />

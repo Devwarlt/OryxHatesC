@@ -4,23 +4,23 @@
 
 using namespace std;
 
-class FailurePacket
+class LoadPacket
 {
-	
+
 public:
-	int errorId;
-	std::wstring errorDescription;
+	int charId;
+	bool isFromArena;
 
 	void parseFromInput(ifstream *in);
 
-	void writeToOutput(ofstream  *out);
+	void writeToOutput(ofstream *out);
 
 
 private:
 	void InitializeInstanceFields();
 
 public:
-	FailurePacket()
+	LoadPacket()
 	{
 		InitializeInstanceFields();
 	}
