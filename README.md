@@ -1,7 +1,11 @@
-Realm of the Mad God C++ Client
+Oryx-Hates-C
 ====================
-
 A Realm of the Mad God client written in C++.
+
+####[TODO](#todo-1 "TODO")
+####[Client Packets](#client-packets-1 "Client Packets")
+####[Server Packets](#server-packets-1 "Server Packets")
+####[Objects](#objects-1 "Objects")
 
 TODO:
 --
@@ -347,3 +351,121 @@ TODO:
 	Tile[] tiles
 	Entity[] newObjs
 	int[] drops
+	
+	
+#Objects
+
+###BitmapData
+	int width
+	int height;
+	byte[] bytes;
+	
+###Entity
+	short objectType
+	Status status
+	
+###GroundData
+	string id
+	int type
+	int maxDamage
+	int minDamage
+	boolean noWalk
+	boolean push
+	boolean sink
+	float speed
+	
+###Item
+	int item
+	int slotType
+	boolean tradeable
+	boolean included
+	
+###ItemData
+	string id
+	int type
+	int slotType
+	int tier
+	string petFamily
+	string rarity
+	string activate
+	boolean consumable
+	boolean soulbound
+	boolean usable
+	int bagType
+	int feedPower
+	float rateOfFire
+	int fameBonus
+	int mpCost
+	int mpEndCost
+	boolean multiPhase
+	int numProjectiles
+	ProjectileData[] projectiles
+	
+###Location
+	float x
+	float y
+	float distanceSquaredTo(Location location)
+	float distanceTo(Location location)
+	
+###LocationRecord
+	int time
+	float x
+	float y
+	float distanceSquaredTo(Location location)
+	float distanceTo(Location location)
+	
+###ObjectData
+	string id
+	int type
+	int maxHitPoints
+	int maxSize
+	int minSize
+	int size
+	int sizeStep
+	int shadowSize
+	int color
+	float xpMult
+	float rotation
+	boolean drawOnGround
+	boolean enemy
+	boolean fullOccupy
+	boolean occupySquare
+	boolean enemyOccupySquare
+	boolean blocksSight
+	boolean noMiniMap
+	boolean stasisImmune
+	boolean protectFromGroundDamage
+	boolean protectFromSink
+	boolean connects
+	float z
+	
+###Packet
+	byte id()
+	string toString()
+	
+###ProjectileData
+	string objectId
+	float speed
+	int maxDamage
+	int minDamage
+	int lifetimeMS
+	
+###SlotObject
+	int objectId
+	int slotId
+	int objectType
+	
+###StatData
+	int obf0
+	int obf1
+	string obf2
+	
+###Status
+	int objectId
+	Location pos
+	StatData[] data
+	
+###Tile
+	short x
+	short y
+	int type
