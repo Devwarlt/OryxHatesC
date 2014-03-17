@@ -63,6 +63,9 @@
     <ClCompile Include="Src\ROTMG\Encryption\ARC4Encryptor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Src\ROTMG\Packets\Packets\PacketFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Base64\Base64.hpp">

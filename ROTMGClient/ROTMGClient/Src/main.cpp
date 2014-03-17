@@ -1,3 +1,4 @@
+﻿
 #include <iostream>
 
 #include <ROTMG/Encryption/Encryption.hpp>
@@ -9,6 +10,17 @@
 #include <ROTMG/Queues/EncryptorOutQueue.hpp>
 #include <ROTMG/Queues/DecryptorInQueue.hpp>
 #include <concurrent_vector.h>
+
+	/*
+	   ____                    _    _       _               _____ 
+	  / __ \                  | |  | |     | |             / ____|
+	 | |  | |_ __ _   ___  __ | |__| | __ _| |_ ___  ___  | |     
+	 | |  | | '__| | | \ \/ / |  __  |/ _` | __/ _ \/ __| | |     
+	 | |__| | |  | |_| |>  <  | |  | | (_| | ||  __/\__ \ | |____ 
+	  \____/|_|   \__, /_/\_\ |_|  |_|\__,_|\__\___||___/  \_____|
+	              __/ |                                           
+	             |___/                                            
+	*/
 
 class Listener : public rotmg::ConnectionListener {
 public:
@@ -45,6 +57,9 @@ private:
 
 int main(int _argc, char** _argv) {
 	
+	std::cout << "OryxHatesC, Version 1.0b\n";
+	std::cout << "\nCreated by C453, from bombpersons source.";
+
 	// Start the proxy
 	//rotmg::Proxy proxy;
 	//proxy.SetServerIp("176.34.240.11");
